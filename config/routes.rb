@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
+
   resources :quotes 
-end
+
+  get '/test', to: 'application#test'
+end 
+  
+
