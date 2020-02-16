@@ -17,9 +17,26 @@ class Quotes {
         e.preventDefault()
         const value = this.newQuoteBody.value
         
-        this.adapter.createQuote(value).then(note => {
+
+        this.adapter.createQuote(value).then(quote => {
             this.quotes.push(new Quote(quote))
             this.newQuoteBody.value = ''
             this.render()
         })
     }
+
+    fetchAndLoadQuotes() {
+        this.adapter
+        .getQuotes()
+        .then(quotes => {
+            notes.forEach(quote => this.quotes.push(new Quote(quote)))
+        })
+        .then(() => {
+            this.render()
+        })
+    }
+
+    render() {
+        this.quotesContainer.innerHTML = this.quotes.map(quote => quote.renderLi()).join('')
+    }
+}
