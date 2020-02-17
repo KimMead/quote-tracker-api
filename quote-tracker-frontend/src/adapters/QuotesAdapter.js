@@ -1,7 +1,7 @@
 class QuotesAdapter {
     constructor() {
         this.baseUrl =
-        'http://localhost:3000/api/quotes'
+        'http://localhost:3000/quotes'
     }
 
     getQuotes() {
