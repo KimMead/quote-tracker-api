@@ -1,5 +1,5 @@
 class quote {
-    constryctor(quoteJSON) {
+    constructor(quoteJSON) {
         this.id = quoteJSON.id
         this.body = quoteJSON.body
     }

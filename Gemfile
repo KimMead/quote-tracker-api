@@ -6,9 +6,12 @@ ruby '2.6.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record
+# gem 'bootstrap', '~> 4.4.1'
 gem 'sqlite3', '~> 1.3.13'
+gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'pry'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

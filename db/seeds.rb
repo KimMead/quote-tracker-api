@@ -1,3 +1,3 @@
-40.times do
+30.times do
     Quote.create(body: Faker::Movies::StarWars.unique.quote)
 end 
