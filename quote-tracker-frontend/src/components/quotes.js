@@ -1,4 +1,4 @@
-console.log("I'm here")
+
 class Quotes {
     constructor() {
         this.quotes = []
@@ -7,14 +7,14 @@ class Quotes {
         this.bindEventListeners()
         this.fetchAndLoadQuotes()
     }
-
+    
     initBindingsAndEventListeners() {
         this.quotesContainer = document.getElementById('quotes-container')
         this.newQuoteBody = document.getElementById('new-quote-body')
         this.quoteForm = document.getElementById('new-quote-form')
         console.log(this.quoteForm)
         this.quoteForm.addEventListener('submit', (e) => { 
-            debugger
+            
             this.createQuote
         })
 
@@ -25,7 +25,7 @@ class Quotes {
 
     createQuote(e) {
         e.preventDefault()
-        debugger
+        
         const value = this.newQuoteBody.value
         
         this.adapter.createQuote(value).then(quote => {

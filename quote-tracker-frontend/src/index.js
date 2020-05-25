@@ -1,3 +1,4 @@
+// const app = new App()
 const BACKEND_URL = 'http://localhost:3000/quotes';
 fetch(`${BACKEND_URL}`)
   .then(response => response.json())
